@@ -39,25 +39,33 @@ namespace StoreArtemis
 		// Agregar a lista
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            try
-			{
-				Prenda prenda = new Prenda();
+			Prenda prenda = new Prenda();
 
-				prenda.TipoPrenda = TipoPrendaBox.Items[TipoPrendaBox.SelectedIndex].ToString();
-				prenda.Color = ColorBox.Items[ColorBox.SelectedIndex].ToString();
-				prenda.Marca = MarcaBox.Items[MarcaBox.SelectedIndex].ToString();
-				prenda.Talla = int.Parse(txtTalla.Text);
-				prenda.Precio = double.Parse(txtPrecio.Text);
-				prendas.Add(prenda);
-				actualizarCantidadDePrendas();
-			} catch
+			// Validar numeros
+
+			if (!int.TryParse(txtTalla.Text, out prenda.Talla))
 			{
-				MessageBox.Show("Dato invalido");
+				MessageBox.Show($"El valor {txtTalla.Text} no es un numero.");
+				return;
 			}
-			limpiardatos();
+
+			if (!double.TryParse(txtPrecio.Text, out prenda.Precio))
+			{
+				MessageBox.Show($"El valor {txtTalla.Text} no es un numero.");
+				return;
+			}
+
+			// Obtener datos de la vista
+			prenda.TipoPrenda = TipoPrendaBox.Items[TipoPrendaBox.SelectedIndex].ToString();
+			prenda.Color = ColorBox.Items[ColorBox.SelectedIndex].ToString();
+			prenda.Marca = MarcaBox.Items[MarcaBox.SelectedIndex].ToString();
+
+			prendas.Add(prenda);
+			actualizarCantidadDePrendas();
+			limpiarDatos();
 		}
 
-		private void limpiardatos()
+		private void limpiarDatos()
         {
 			TipoPrendaBox.SelectedIndex = -1;
 			ColorBox.SelectedIndex = -1;
@@ -72,15 +80,5 @@ namespace StoreArtemis
 			CantidadDePrendas++;
 			lblPrendasTotales.Text = $"Prendas totales: {CantidadDePrendas}";
 		}
-
-        private void ShopArtemis_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblPrendasTotales_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

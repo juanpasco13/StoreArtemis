@@ -141,7 +141,6 @@ namespace StoreArtemis
             this.lblPrendasTotales.Size = new System.Drawing.Size(160, 18);
             this.lblPrendasTotales.TabIndex = 12;
             this.lblPrendasTotales.Text = "Prendas totales: 0";
-            this.lblPrendasTotales.Click += new System.EventHandler(this.lblPrendasTotales_Click);
             // 
             // TipoPrendaBox
             // 
@@ -207,7 +206,6 @@ namespace StoreArtemis
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ShopArtemis";
             this.Text = "Shop Artemis";
-            this.Load += new System.EventHandler(this.ShopArtemis_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
