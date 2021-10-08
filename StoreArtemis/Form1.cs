@@ -39,23 +39,38 @@ namespace StoreArtemis
 		// Agregar a lista
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-			Prenda prenda = new Prenda();
+            try
+			{
+				Prenda prenda = new Prenda();
 
-			prenda.TipoPrenda = txtTipoPrenda.Text;
-			prenda.Color = txtColor.Text;
-			prenda.Marca = txtMarca.Text;
-			prenda.Talla = txtTalla.Text;
-			prenda.Precio = txtPrecio.Text;
-
-			prendas.Add(prenda);
-			StoreArtemis.actualizarCantidadDePrendas();
+				prenda.TipoPrenda = txtTipoPrenda.Text;
+				prenda.Color = txtColor.Text;
+				prenda.Marca = txtMarca.Text;
+				prenda.Talla = int.Parse(txtTalla.Text);
+				prenda.Precio = double.Parse(txtPrecio.Text);
+				prendas.Add(prenda);
+				actualizarCantidadDePrendas();
+			} catch
+			{
+				MessageBox.Show("Dato invalido");
+			}
         }
 
 		// Aumentar la cantidad y actualizarla en la vista
-		private static void actualizarCantidadDePrendas()
+		private void actualizarCantidadDePrendas()
 		{
 			CantidadDePrendas++;
 			lblPrendasTotales.Text = $"Prendas totales: {CantidadDePrendas}";
 		}
+
+        private void ShopArtemis_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPrendasTotales_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
