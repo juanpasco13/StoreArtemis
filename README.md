@@ -2,7 +2,7 @@
 
 ##### Por: Juan David Gaviria Correa, Juan Pablo Garcia, Melissa Mahecha Garcia, Danilo Garcia Valencia
 
-El taller se encuentra [aqui](https://github.com/juanpasco13/StoreArtemis/Extras/Ejercicio/Taller2.docx "Taller 2").
+El taller se encuentra [aqui](https://github.com/juanpasco13/StoreArtemis/blob/master/Extras/Ejercicio/Taller2.docx "Taller 2").
 
 ### Solucion Primer Punto
 
