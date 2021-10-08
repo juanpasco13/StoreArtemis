@@ -15,7 +15,7 @@ namespace StoreArtemis
 		// Atributos estaticos
 		private static List<Prenda> prendas;
 		private static int CantidadDePrendas { get; set; }
-		
+
 		// Constructores
 
 		// Constructor estatico
@@ -23,12 +23,6 @@ namespace StoreArtemis
 		{
 			prendas = new List<Prenda>();
 			CantidadDePrendas = 0;
-
-			Prenda prenda = new Prenda();
-
-			prendas.Add(prenda);
-			
-
 		}
 
         public ShopArtemis()
@@ -36,44 +30,32 @@ namespace StoreArtemis
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblTypePrenda_Click(object sender, EventArgs e)
-        {
-
-        }
-
+		// Easter Egg
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+			MessageBox.Show("Te ganaste un bitcoin");
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+		// Agregar a lista
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+			Prenda prenda = new Prenda();
 
+			prenda.TipoPrenda = txtTipoPrenda.Text;
+			prenda.Color = txtColor.Text;
+			prenda.Marca = txtMarca.Text;
+			prenda.Talla = txtTalla.Text;
+			prenda.Precio = txtPrecio.Text;
+
+			prendas.Add(prenda);
+			StoreArtemis.actualizarCantidadDePrendas();
         }
 
-        private void lblPrendasTotales_Click(object sender, EventArgs e)
-        {
-
-        }
+		// Aumentar la cantidad y actualizarla en la vista
+		private static void actualizarCantidadDePrendas()
+		{
+			CantidadDePrendas++;
+			lblPrendasTotales.Text = $"Prendas totales: {CantidadDePrendas}";
+		}
     }
 }

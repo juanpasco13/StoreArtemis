@@ -55,7 +55,6 @@ namespace StoreArtemis
             this.lblTypePrenda.Size = new System.Drawing.Size(111, 18);
             this.lblTypePrenda.TabIndex = 0;
             this.lblTypePrenda.Text = "Tipo Prenda ";
-            this.lblTypePrenda.Click += new System.EventHandler(this.lblTypePrenda_Click);
             // 
             // lblColor
             // 
@@ -96,7 +95,6 @@ namespace StoreArtemis
             this.lblPrice.Size = new System.Drawing.Size(57, 18);
             this.lblPrice.TabIndex = 4;
             this.lblPrice.Text = "Precio";
-            this.lblPrice.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox1
             // 
@@ -122,7 +120,6 @@ namespace StoreArtemis
             this.txtColor.Name = "txtColor";
             this.txtColor.Size = new System.Drawing.Size(215, 19);
             this.txtColor.TabIndex = 7;
-            this.txtColor.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtMarca
             // 
@@ -144,7 +141,6 @@ namespace StoreArtemis
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(215, 19);
             this.txtPrecio.TabIndex = 10;
-            this.txtPrecio.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // btnAgregar
             // 
@@ -166,7 +162,6 @@ namespace StoreArtemis
             this.lblPrendasTotales.Size = new System.Drawing.Size(145, 18);
             this.lblPrendasTotales.TabIndex = 12;
             this.lblPrendasTotales.Text = "Prendas Totales:";
-            this.lblPrendasTotales.Click += new System.EventHandler(this.lblPrendasTotales_Click);
             // 
             // ShopArtemis
             // 
@@ -190,7 +185,6 @@ namespace StoreArtemis
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ShopArtemis";
             this.Text = "Shop Artemis";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
