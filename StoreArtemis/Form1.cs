@@ -10,24 +10,50 @@ using System.Windows.Forms;
 
 namespace StoreArtemis
 {
-    public partial class Form1 : Form
+    public partial class ShopArtemis : Form
     {
 		// Atributos estaticos
 		private static List<Prenda> prendas;
 		private static int CantidadDePrendas { get; set; }
-
+		
 		// Constructores
 
 		// Constructor estatico
-		static Form1()
+		static ShopArtemis()
 		{
 			prendas = new List<Prenda>();
 			CantidadDePrendas = 0;
+
+			Prenda prenda = new Prenda();
+
+			prendas.Add(prenda);
+			
+
 		}
 
-        public Form1()
+        public ShopArtemis()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTypePrenda_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
