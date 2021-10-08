@@ -53,7 +53,7 @@ namespace StoreArtemis
 
 			if (!double.TryParse(txtPrecio.Text, out precio))
 			{
-				MessageBox.Show($"El valor  del precio {txtPrecio.Text} no es un numero.");
+				MessageBox.Show($"El valor del precio {txtPrecio.Text} no es un numero.");
 				return;
 			}
 
@@ -84,5 +84,24 @@ namespace StoreArtemis
 			CantidadDePrendas++;
 			lblPrendasTotales.Text = $"Prendas totales: {CantidadDePrendas}";
 		}
+
+        private void btnPrendas_Click(object sender, EventArgs e)
+        {
+			string mensaje = "-- Prendas --\n";
+			mensaje += $"Cantida de prendas: {prendas.Count}\n";
+
+			for (int ind = 0; ind < prendas.Count; ind++)
+			{
+				mensaje += $"-- Prenda {ind + 1} --\n";
+				mensaje += $"Tipo prenda: {prendas.ElementAt(ind).TipoPrenda}\n";
+				mensaje += $"Color: {prendas.ElementAt(ind).Color}\n";
+				mensaje += $"Marca: {prendas.ElementAt(ind).Marca}\n";
+				mensaje += $"Talla: {prendas.ElementAt(ind).Talla}\n";
+				mensaje += $"Precio: {prendas.ElementAt(ind).Precio}\n";
+				mensaje += $"-----------------------\n";
+			}
+
+			MessageBox.Show(mensaje);
+        }
     }
 }

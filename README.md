@@ -21,3 +21,5 @@ Describir con sus propias palabras:
 ### Solucion Segundo Punto
 
 En este proyecto encontraras la solucion al segundo punto.
+
+[![Vista](Vista "Vista")](https://github.com/juanpasco13/StoreArtemis/Extras/Images/Vista.png "Vista")
