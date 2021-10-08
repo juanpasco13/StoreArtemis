@@ -43,9 +43,9 @@ namespace StoreArtemis
 			{
 				Prenda prenda = new Prenda();
 
-				prenda.TipoPrenda = txtTipoPrenda.Text;
-				prenda.Color = txtColor.Text;
-				prenda.Marca = txtMarca.Text;
+				prenda.TipoPrenda = TipoPrendaBox.Items[TipoPrendaBox.SelectedIndex].ToString();
+				prenda.Color = ColorBox.Items[ColorBox.SelectedIndex].ToString();
+				prenda.Marca = MarcaBox.Items[MarcaBox.SelectedIndex].ToString();
 				prenda.Talla = int.Parse(txtTalla.Text);
 				prenda.Precio = double.Parse(txtPrecio.Text);
 				prendas.Add(prenda);
@@ -54,7 +54,17 @@ namespace StoreArtemis
 			{
 				MessageBox.Show("Dato invalido");
 			}
-        }
+			limpiardatos();
+		}
+
+		private void limpiardatos()
+        {
+			TipoPrendaBox.SelectedIndex = -1;
+			ColorBox.SelectedIndex = -1;
+			MarcaBox.SelectedIndex = -1;
+			txtTalla.Text = "";
+			txtPrecio.Text = "";
+		}
 
 		// Aumentar la cantidad y actualizarla en la vista
 		private void actualizarCantidadDePrendas()

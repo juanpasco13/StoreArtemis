@@ -36,13 +36,13 @@ namespace StoreArtemis
             this.lblSize = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtTipoPrenda = new System.Windows.Forms.TextBox();
-            this.txtColor = new System.Windows.Forms.TextBox();
-            this.txtMarca = new System.Windows.Forms.TextBox();
             this.txtTalla = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.lblPrendasTotales = new System.Windows.Forms.Label();
+            this.TipoPrendaBox = new System.Windows.Forms.ComboBox();
+            this.MarcaBox = new System.Windows.Forms.ComboBox();
+            this.ColorBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,27 +107,6 @@ namespace StoreArtemis
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // txtTipoPrenda
-            // 
-            this.txtTipoPrenda.Location = new System.Drawing.Point(412, 40);
-            this.txtTipoPrenda.Name = "txtTipoPrenda";
-            this.txtTipoPrenda.Size = new System.Drawing.Size(215, 19);
-            this.txtTipoPrenda.TabIndex = 6;
-            // 
-            // txtColor
-            // 
-            this.txtColor.Location = new System.Drawing.Point(412, 82);
-            this.txtColor.Name = "txtColor";
-            this.txtColor.Size = new System.Drawing.Size(215, 19);
-            this.txtColor.TabIndex = 7;
-            // 
-            // txtMarca
-            // 
-            this.txtMarca.Location = new System.Drawing.Point(412, 129);
-            this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(215, 19);
-            this.txtMarca.TabIndex = 8;
-            // 
             // txtTalla
             // 
             this.txtTalla.Location = new System.Drawing.Point(412, 177);
@@ -164,18 +143,60 @@ namespace StoreArtemis
             this.lblPrendasTotales.Text = "Prendas totales: 0";
             this.lblPrendasTotales.Click += new System.EventHandler(this.lblPrendasTotales_Click);
             // 
+            // TipoPrendaBox
+            // 
+            this.TipoPrendaBox.FormattingEnabled = true;
+            this.TipoPrendaBox.Items.AddRange(new object[] {
+            "Juvenil",
+            "Deportiva",
+            "Elegante",
+            "Casual"});
+            this.TipoPrendaBox.Location = new System.Drawing.Point(412, 37);
+            this.TipoPrendaBox.Name = "TipoPrendaBox";
+            this.TipoPrendaBox.Size = new System.Drawing.Size(215, 21);
+            this.TipoPrendaBox.TabIndex = 13;
+            // 
+            // MarcaBox
+            // 
+            this.MarcaBox.FormattingEnabled = true;
+            this.MarcaBox.Items.AddRange(new object[] {
+            "Adidas",
+            "Nike",
+            "Hueco",
+            "Gucci",
+            "Pacifik"});
+            this.MarcaBox.Location = new System.Drawing.Point(412, 129);
+            this.MarcaBox.Name = "MarcaBox";
+            this.MarcaBox.Size = new System.Drawing.Size(215, 21);
+            this.MarcaBox.TabIndex = 14;
+            // 
+            // ColorBox
+            // 
+            this.ColorBox.FormattingEnabled = true;
+            this.ColorBox.Items.AddRange(new object[] {
+            "Blanco",
+            "Negro",
+            "Verde",
+            "Rojo",
+            "Azul",
+            "Amarillo"});
+            this.ColorBox.Location = new System.Drawing.Point(412, 83);
+            this.ColorBox.Name = "ColorBox";
+            this.ColorBox.Size = new System.Drawing.Size(215, 21);
+            this.ColorBox.TabIndex = 15;
+            // 
             // ShopArtemis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(660, 400);
+            this.Controls.Add(this.ColorBox);
+            this.Controls.Add(this.MarcaBox);
+            this.Controls.Add(this.TipoPrendaBox);
             this.Controls.Add(this.lblPrendasTotales);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.txtTalla);
-            this.Controls.Add(this.txtMarca);
-            this.Controls.Add(this.txtColor);
-            this.Controls.Add(this.txtTipoPrenda);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.lblSize);
@@ -201,13 +222,13 @@ namespace StoreArtemis
         private System.Windows.Forms.Label lblSize;
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtTipoPrenda;
-        private System.Windows.Forms.TextBox txtColor;
-        private System.Windows.Forms.TextBox txtMarca;
         private System.Windows.Forms.TextBox txtTalla;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label lblPrendasTotales;
+        private System.Windows.Forms.ComboBox TipoPrendaBox;
+        private System.Windows.Forms.ComboBox MarcaBox;
+        private System.Windows.Forms.ComboBox ColorBox;
     }
 }
 
