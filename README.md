@@ -22,4 +22,4 @@ Describir con sus propias palabras:
 
 En este proyecto encontraras la solucion al segundo punto.
 
-[![Vista](Vista "Vista")](https://raw.githubusercontent.com/juanpasco13/StoreArtemis/master/Extras/Images/Vista.png "Vista")
+![Imagen de la vista](https://raw.githubusercontent.com/juanpasco13/StoreArtemis/master/Extras/Images/Vista.png)
