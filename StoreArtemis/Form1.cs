@@ -40,18 +40,20 @@ namespace StoreArtemis
         private void btnAgregar_Click(object sender, EventArgs e)
         {
 			Prenda prenda = new Prenda();
+			int talla = 0;
+			double precio = 0;
 
 			// Validar numeros
 
-			if (!int.TryParse(txtTalla.Text, out prenda.Talla))
+			if (!int.TryParse(txtTalla.Text, out talla))
 			{
-				MessageBox.Show($"El valor {txtTalla.Text} no es un numero.");
+				MessageBox.Show($"El valor de la talla {txtTalla.Text} no es un numero.");
 				return;
 			}
 
-			if (!double.TryParse(txtPrecio.Text, out prenda.Precio))
+			if (!double.TryParse(txtPrecio.Text, out precio))
 			{
-				MessageBox.Show($"El valor {txtTalla.Text} no es un numero.");
+				MessageBox.Show($"El valor  del precio {txtPrecio.Text} no es un numero.");
 				return;
 			}
 
@@ -59,6 +61,8 @@ namespace StoreArtemis
 			prenda.TipoPrenda = TipoPrendaBox.Items[TipoPrendaBox.SelectedIndex].ToString();
 			prenda.Color = ColorBox.Items[ColorBox.SelectedIndex].ToString();
 			prenda.Marca = MarcaBox.Items[MarcaBox.SelectedIndex].ToString();
+			prenda.Talla = talla;
+			prenda.Precio = precio;
 
 			prendas.Add(prenda);
 			actualizarCantidadDePrendas();
