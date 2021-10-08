@@ -36,13 +36,13 @@ namespace StoreArtemis
             this.lblSize = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtTipoPrenda = new System.Windows.Forms.TextBox();
+            this.txtColor = new System.Windows.Forms.TextBox();
+            this.txtMarca = new System.Windows.Forms.TextBox();
+            this.txtTalla = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.lblPrendasTotales = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,7 +52,7 @@ namespace StoreArtemis
             this.lblTypePrenda.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTypePrenda.Location = new System.Drawing.Point(254, 40);
             this.lblTypePrenda.Name = "lblTypePrenda";
-            this.lblTypePrenda.Size = new System.Drawing.Size(138, 25);
+            this.lblTypePrenda.Size = new System.Drawing.Size(111, 18);
             this.lblTypePrenda.TabIndex = 0;
             this.lblTypePrenda.Text = "Tipo Prenda ";
             this.lblTypePrenda.Click += new System.EventHandler(this.lblTypePrenda_Click);
@@ -63,7 +63,7 @@ namespace StoreArtemis
             this.lblColor.Font = new System.Drawing.Font("Verdana", 12F);
             this.lblColor.Location = new System.Drawing.Point(254, 82);
             this.lblColor.Name = "lblColor";
-            this.lblColor.Size = new System.Drawing.Size(65, 25);
+            this.lblColor.Size = new System.Drawing.Size(50, 18);
             this.lblColor.TabIndex = 1;
             this.lblColor.Text = "Color";
             // 
@@ -73,7 +73,7 @@ namespace StoreArtemis
             this.lblMarca.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMarca.Location = new System.Drawing.Point(254, 129);
             this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(72, 25);
+            this.lblMarca.Size = new System.Drawing.Size(55, 18);
             this.lblMarca.TabIndex = 2;
             this.lblMarca.Text = "Marca";
             // 
@@ -83,7 +83,7 @@ namespace StoreArtemis
             this.lblSize.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSize.Location = new System.Drawing.Point(254, 177);
             this.lblSize.Name = "lblSize";
-            this.lblSize.Size = new System.Drawing.Size(58, 25);
+            this.lblSize.Size = new System.Drawing.Size(46, 18);
             this.lblSize.TabIndex = 3;
             this.lblSize.Text = "Talla";
             // 
@@ -91,9 +91,9 @@ namespace StoreArtemis
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.Location = new System.Drawing.Point(254, 223);
+            this.lblPrice.Location = new System.Drawing.Point(254, 222);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(73, 25);
+            this.lblPrice.Size = new System.Drawing.Size(57, 18);
             this.lblPrice.TabIndex = 4;
             this.lblPrice.Text = "Precio";
             this.lblPrice.Click += new System.EventHandler(this.label5_Click);
@@ -109,73 +109,77 @@ namespace StoreArtemis
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // textBox1
+            // txtTipoPrenda
             // 
-            this.textBox1.Location = new System.Drawing.Point(412, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(215, 22);
-            this.textBox1.TabIndex = 6;
+            this.txtTipoPrenda.Location = new System.Drawing.Point(412, 40);
+            this.txtTipoPrenda.Name = "txtTipoPrenda";
+            this.txtTipoPrenda.Size = new System.Drawing.Size(215, 19);
+            this.txtTipoPrenda.TabIndex = 6;
             // 
-            // textBox2
+            // txtColor
             // 
-            this.textBox2.Location = new System.Drawing.Point(412, 82);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(215, 22);
-            this.textBox2.TabIndex = 7;
+            this.txtColor.Location = new System.Drawing.Point(412, 82);
+            this.txtColor.Name = "txtColor";
+            this.txtColor.Size = new System.Drawing.Size(215, 19);
+            this.txtColor.TabIndex = 7;
+            this.txtColor.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox3
+            // txtMarca
             // 
-            this.textBox3.Location = new System.Drawing.Point(412, 129);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(215, 22);
-            this.textBox3.TabIndex = 8;
+            this.txtMarca.Location = new System.Drawing.Point(412, 129);
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.Size = new System.Drawing.Size(215, 19);
+            this.txtMarca.TabIndex = 8;
             // 
-            // textBox4
+            // txtTalla
             // 
-            this.textBox4.Location = new System.Drawing.Point(412, 177);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(215, 22);
-            this.textBox4.TabIndex = 9;
+            this.txtTalla.Location = new System.Drawing.Point(412, 177);
+            this.txtTalla.Name = "txtTalla";
+            this.txtTalla.Size = new System.Drawing.Size(215, 19);
+            this.txtTalla.TabIndex = 9;
             // 
-            // textBox5
+            // txtPrecio
             // 
-            this.textBox5.Location = new System.Drawing.Point(412, 223);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(215, 22);
-            this.textBox5.TabIndex = 10;
+            this.txtPrecio.Location = new System.Drawing.Point(412, 223);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(215, 19);
+            this.txtPrecio.TabIndex = 10;
+            this.txtPrecio.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
-            // button1
+            // btnAgregar
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(282, 281);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 37);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(282, 281);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(110, 37);
+            this.btnAgregar.TabIndex = 11;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // label1
+            // lblPrendasTotales
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(157, 353);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 25);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Prendas Totales:";
+            this.lblPrendasTotales.AutoSize = true;
+            this.lblPrendasTotales.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrendasTotales.Location = new System.Drawing.Point(157, 353);
+            this.lblPrendasTotales.Name = "lblPrendasTotales";
+            this.lblPrendasTotales.Size = new System.Drawing.Size(145, 18);
+            this.lblPrendasTotales.TabIndex = 12;
+            this.lblPrendasTotales.Text = "Prendas Totales:";
+            this.lblPrendasTotales.Click += new System.EventHandler(this.lblPrendasTotales_Click);
             // 
             // ShopArtemis
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(660, 400);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblPrendasTotales);
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.txtPrecio);
+            this.Controls.Add(this.txtTalla);
+            this.Controls.Add(this.txtMarca);
+            this.Controls.Add(this.txtColor);
+            this.Controls.Add(this.txtTipoPrenda);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.lblSize);
@@ -183,6 +187,7 @@ namespace StoreArtemis
             this.Controls.Add(this.lblColor);
             this.Controls.Add(this.lblTypePrenda);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ShopArtemis";
             this.Text = "Shop Artemis";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -200,13 +205,13 @@ namespace StoreArtemis
         private System.Windows.Forms.Label lblSize;
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtTipoPrenda;
+        private System.Windows.Forms.TextBox txtColor;
+        private System.Windows.Forms.TextBox txtMarca;
+        private System.Windows.Forms.TextBox txtTalla;
+        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Label lblPrendasTotales;
     }
 }
 
