@@ -87,7 +87,21 @@ namespace StoreArtemis
 
         private void btnPrendas_Click(object sender, EventArgs e)
         {
+			string mensaje = "-- Prendas --\n";
+			mensaje += $"Cantida de prendas: {prendas.length}\n";
 
+			for (int ind = 0; ind < prendas.length; ind++)
+			{
+				mensaje += $"-- Prenda {ind + 1} --\n";
+				mensaje += $"Tipo prenda: {prendas.ElementAt(ind).TipoPrenda}\n";
+				mensaje += $"Color: {prendas.ElementAt(ind).Color}\n";
+				mensaje += $"Marca: {prendas.ElementAt(ind).Marca}\n";
+				mensaje += $"Talla: {prendas.ElementAt(ind).Talla}\n";
+				mensaje += $"Precio: {prendas.ElementAt(ind).Precio}\n";
+				mensaje += $"-----------------------\n";
+			}
+
+			MessageBox.Show(mensaje);
         }
     }
 }
