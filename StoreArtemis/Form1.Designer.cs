@@ -51,7 +51,7 @@ namespace StoreArtemis
             // 
             this.lblTypePrenda.AutoSize = true;
             this.lblTypePrenda.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTypePrenda.Location = new System.Drawing.Point(339, 49);
+            this.lblTypePrenda.Location = new System.Drawing.Point(282, 49);
             this.lblTypePrenda.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTypePrenda.Name = "lblTypePrenda";
             this.lblTypePrenda.Size = new System.Drawing.Size(138, 25);
@@ -62,7 +62,7 @@ namespace StoreArtemis
             // 
             this.lblColor.AutoSize = true;
             this.lblColor.Font = new System.Drawing.Font("Verdana", 12F);
-            this.lblColor.Location = new System.Drawing.Point(339, 101);
+            this.lblColor.Location = new System.Drawing.Point(282, 101);
             this.lblColor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblColor.Name = "lblColor";
             this.lblColor.Size = new System.Drawing.Size(65, 25);
@@ -73,7 +73,7 @@ namespace StoreArtemis
             // 
             this.lblMarca.AutoSize = true;
             this.lblMarca.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarca.Location = new System.Drawing.Point(339, 159);
+            this.lblMarca.Location = new System.Drawing.Point(282, 159);
             this.lblMarca.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMarca.Name = "lblMarca";
             this.lblMarca.Size = new System.Drawing.Size(72, 25);
@@ -84,7 +84,7 @@ namespace StoreArtemis
             // 
             this.lblSize.AutoSize = true;
             this.lblSize.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSize.Location = new System.Drawing.Point(339, 218);
+            this.lblSize.Location = new System.Drawing.Point(282, 227);
             this.lblSize.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSize.Name = "lblSize";
             this.lblSize.Size = new System.Drawing.Size(58, 25);
@@ -95,7 +95,7 @@ namespace StoreArtemis
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.Location = new System.Drawing.Point(339, 273);
+            this.lblPrice.Location = new System.Drawing.Point(282, 287);
             this.lblPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(73, 25);
@@ -108,7 +108,7 @@ namespace StoreArtemis
             this.pictureBox1.Location = new System.Drawing.Point(16, 34);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(294, 278);
+            this.pictureBox1.Size = new System.Drawing.Size(258, 278);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -116,24 +116,24 @@ namespace StoreArtemis
             // 
             // txtTalla
             // 
-            this.txtTalla.Location = new System.Drawing.Point(549, 218);
+            this.txtTalla.Location = new System.Drawing.Point(442, 227);
             this.txtTalla.Margin = new System.Windows.Forms.Padding(4);
             this.txtTalla.Name = "txtTalla";
-            this.txtTalla.Size = new System.Drawing.Size(285, 22);
+            this.txtTalla.Size = new System.Drawing.Size(221, 22);
             this.txtTalla.TabIndex = 9;
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(549, 274);
+            this.txtPrecio.Location = new System.Drawing.Point(442, 287);
             this.txtPrecio.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(285, 22);
+            this.txtPrecio.Size = new System.Drawing.Size(221, 22);
             this.txtPrecio.TabIndex = 10;
             // 
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(265, 346);
+            this.btnAgregar.Location = new System.Drawing.Point(287, 346);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(147, 46);
@@ -146,7 +146,7 @@ namespace StoreArtemis
             // 
             this.lblPrendasTotales.AutoSize = true;
             this.lblPrendasTotales.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrendasTotales.Location = new System.Drawing.Point(318, 436);
+            this.lblPrendasTotales.Location = new System.Drawing.Point(364, 431);
             this.lblPrendasTotales.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrendasTotales.Name = "lblPrendasTotales";
             this.lblPrendasTotales.Size = new System.Drawing.Size(196, 25);
@@ -161,10 +161,10 @@ namespace StoreArtemis
             "Deportiva",
             "Elegante",
             "Casual"});
-            this.TipoPrendaBox.Location = new System.Drawing.Point(549, 46);
+            this.TipoPrendaBox.Location = new System.Drawing.Point(442, 49);
             this.TipoPrendaBox.Margin = new System.Windows.Forms.Padding(4);
             this.TipoPrendaBox.Name = "TipoPrendaBox";
-            this.TipoPrendaBox.Size = new System.Drawing.Size(285, 24);
+            this.TipoPrendaBox.Size = new System.Drawing.Size(221, 24);
             this.TipoPrendaBox.TabIndex = 13;
             // 
             // MarcaBox
@@ -176,10 +176,10 @@ namespace StoreArtemis
             "Hueco",
             "Gucci",
             "Pacifik"});
-            this.MarcaBox.Location = new System.Drawing.Point(549, 159);
+            this.MarcaBox.Location = new System.Drawing.Point(442, 159);
             this.MarcaBox.Margin = new System.Windows.Forms.Padding(4);
             this.MarcaBox.Name = "MarcaBox";
-            this.MarcaBox.Size = new System.Drawing.Size(285, 24);
+            this.MarcaBox.Size = new System.Drawing.Size(221, 24);
             this.MarcaBox.TabIndex = 14;
             // 
             // ColorBox
@@ -192,16 +192,16 @@ namespace StoreArtemis
             "Rojo",
             "Azul",
             "Amarillo"});
-            this.ColorBox.Location = new System.Drawing.Point(549, 102);
+            this.ColorBox.Location = new System.Drawing.Point(442, 101);
             this.ColorBox.Margin = new System.Windows.Forms.Padding(4);
             this.ColorBox.Name = "ColorBox";
-            this.ColorBox.Size = new System.Drawing.Size(285, 24);
+            this.ColorBox.Size = new System.Drawing.Size(221, 24);
             this.ColorBox.TabIndex = 15;
             // 
             // btnPrendas
             // 
             this.btnPrendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrendas.Location = new System.Drawing.Point(429, 346);
+            this.btnPrendas.Location = new System.Drawing.Point(476, 346);
             this.btnPrendas.Margin = new System.Windows.Forms.Padding(4);
             this.btnPrendas.Name = "btnPrendas";
             this.btnPrendas.Size = new System.Drawing.Size(171, 46);
@@ -214,7 +214,7 @@ namespace StoreArtemis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(855, 492);
+            this.ClientSize = new System.Drawing.Size(689, 492);
             this.Controls.Add(this.btnPrendas);
             this.Controls.Add(this.ColorBox);
             this.Controls.Add(this.MarcaBox);
