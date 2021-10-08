@@ -43,6 +43,7 @@ namespace StoreArtemis
             this.TipoPrendaBox = new System.Windows.Forms.ComboBox();
             this.MarcaBox = new System.Windows.Forms.ComboBox();
             this.ColorBox = new System.Windows.Forms.ComboBox();
+            this.btnPrendas = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,7 +106,7 @@ namespace StoreArtemis
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(16, 34);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(294, 278);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -116,7 +117,7 @@ namespace StoreArtemis
             // txtTalla
             // 
             this.txtTalla.Location = new System.Drawing.Point(549, 218);
-            this.txtTalla.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTalla.Margin = new System.Windows.Forms.Padding(4);
             this.txtTalla.Name = "txtTalla";
             this.txtTalla.Size = new System.Drawing.Size(285, 22);
             this.txtTalla.TabIndex = 9;
@@ -124,7 +125,7 @@ namespace StoreArtemis
             // txtPrecio
             // 
             this.txtPrecio.Location = new System.Drawing.Point(549, 274);
-            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(285, 22);
             this.txtPrecio.TabIndex = 10;
@@ -132,8 +133,8 @@ namespace StoreArtemis
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(376, 346);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregar.Location = new System.Drawing.Point(265, 346);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(147, 46);
             this.btnAgregar.TabIndex = 11;
@@ -145,7 +146,7 @@ namespace StoreArtemis
             // 
             this.lblPrendasTotales.AutoSize = true;
             this.lblPrendasTotales.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrendasTotales.Location = new System.Drawing.Point(209, 434);
+            this.lblPrendasTotales.Location = new System.Drawing.Point(318, 436);
             this.lblPrendasTotales.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrendasTotales.Name = "lblPrendasTotales";
             this.lblPrendasTotales.Size = new System.Drawing.Size(196, 25);
@@ -161,7 +162,7 @@ namespace StoreArtemis
             "Elegante",
             "Casual"});
             this.TipoPrendaBox.Location = new System.Drawing.Point(549, 46);
-            this.TipoPrendaBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TipoPrendaBox.Margin = new System.Windows.Forms.Padding(4);
             this.TipoPrendaBox.Name = "TipoPrendaBox";
             this.TipoPrendaBox.Size = new System.Drawing.Size(285, 24);
             this.TipoPrendaBox.TabIndex = 13;
@@ -176,7 +177,7 @@ namespace StoreArtemis
             "Gucci",
             "Pacifik"});
             this.MarcaBox.Location = new System.Drawing.Point(549, 159);
-            this.MarcaBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MarcaBox.Margin = new System.Windows.Forms.Padding(4);
             this.MarcaBox.Name = "MarcaBox";
             this.MarcaBox.Size = new System.Drawing.Size(285, 24);
             this.MarcaBox.TabIndex = 14;
@@ -192,16 +193,29 @@ namespace StoreArtemis
             "Azul",
             "Amarillo"});
             this.ColorBox.Location = new System.Drawing.Point(549, 102);
-            this.ColorBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ColorBox.Margin = new System.Windows.Forms.Padding(4);
             this.ColorBox.Name = "ColorBox";
             this.ColorBox.Size = new System.Drawing.Size(285, 24);
             this.ColorBox.TabIndex = 15;
+            // 
+            // btnPrendas
+            // 
+            this.btnPrendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrendas.Location = new System.Drawing.Point(429, 346);
+            this.btnPrendas.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPrendas.Name = "btnPrendas";
+            this.btnPrendas.Size = new System.Drawing.Size(171, 46);
+            this.btnPrendas.TabIndex = 16;
+            this.btnPrendas.Text = "Mostrar Prendas";
+            this.btnPrendas.UseVisualStyleBackColor = true;
+            this.btnPrendas.Click += new System.EventHandler(this.btnPrendas_Click);
             // 
             // ShopArtemis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(855, 492);
+            this.Controls.Add(this.btnPrendas);
             this.Controls.Add(this.ColorBox);
             this.Controls.Add(this.MarcaBox);
             this.Controls.Add(this.TipoPrendaBox);
@@ -217,7 +231,7 @@ namespace StoreArtemis
             this.Controls.Add(this.lblTypePrenda);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ShopArtemis";
             this.Text = "Shop Artemis";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -241,6 +255,7 @@ namespace StoreArtemis
         private System.Windows.Forms.ComboBox TipoPrendaBox;
         private System.Windows.Forms.ComboBox MarcaBox;
         private System.Windows.Forms.ComboBox ColorBox;
+        private System.Windows.Forms.Button btnPrendas;
     }
 }
 

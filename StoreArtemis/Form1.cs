@@ -84,5 +84,10 @@ namespace StoreArtemis
 			CantidadDePrendas++;
 			lblPrendasTotales.Text = $"Prendas totales: {CantidadDePrendas}";
 		}
+
+        private void btnPrendas_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
